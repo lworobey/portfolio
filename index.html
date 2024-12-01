@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luke Worobey</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Luke Worobey</h1>
+    <nav>
+        <ul class="nav-menu">
+            <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+            <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <main class="content">
+        <section id="home" class="section">
+            <h2>About Me</h2>
+            <p>Hi, my name is Luke Worobey. I'm currently a software engineering student in a bootcamp program through Carnegie Mellon University in partnership with TalentSprint.</p>
+            <p>This is my portfolio website, where you can see projects that I've worked on, see my skills, and contact me.</p>
+            <p>I have some schooling experience in computer science, but I'm looking to expand my skills and start a career in software engineering.</p>
+        </section>
+        
+        <section id="projects" class="section">
+            <h2>Projects</h2>
+            <p>I don't have a lot of projects yet, but here are the ones I have.</p>
+            
+            <!-- Project 1 Card -->
+            <article class="project-card">
+                <button id="openModal1" class="project-btn">Dino Game</button>
+        
+                <!-- Modal for Project 1 -->
+                <div class="modal" id="modal1">
+                    <div class="modal-content">
+                        <span class="close-button" onclick="closeModal('modal1')">&times;</span>
+                        <h3>Dino Game</h3>
+                        <p>This is a downgraded version of the chrome dinosaur game that I made using HTML, CSS, and Javascript.</p>
+        
+                        <div class="carousel-container">
+                            <div class="carousel-slide">
+                                <img src="dino_game_imgs/DinoGame1.jpg" alt="Start up screen">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="dino_game_imgs/ducking.jpg" alt="Ducking under a bird">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="dino_game_imgs/game_over.jpg" alt="Game over screen">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="dino_game_imgs/jumping.jpg" alt="Jumping over a cactus">
+                            </div>
+        
+                            <!-- Carousel Navigation -->
+                            <button class="prev" onclick="plusSlides(-1)">&#10094;</button>
+                            <button class="next" onclick="plusSlides(1)">&#10095;</button>
+        
+                            <!-- Dots for carousel -->
+                            <div class="dot-container">
+                                <span class="dot" onclick="currentSlide(1)" aria-label="Slide 1"></span>
+                                <span class="dot" onclick="currentSlide(2)" aria-label="Slide 2"></span>
+                                <span class="dot" onclick="currentSlide(3)" aria-label="Slide 3"></span>
+                                <span class="dot" onclick="currentSlide(4)" aria-label="Slide 4"></span>
+                            </div>
+                        </div>
+        
+                        <button class="visit-project" onclick="window.open('https://lworobey.github.io/dino-game', '_blank')">Visit Project</button>
+                    </div>
+                </div>
+            </article>
+        
+            <!-- Project 2 Card -->
+            <article class="project-card">
+                <button id="openModal2" class="project-btn">Empty Project 2</button>
+        
+                <!-- Modal for Project 2 -->
+                <div class="modal" id="modal2">
+                    <div class="modal-content">
+                        <span class="close-button" onclick="closeModal('modal2')">&times;</span>
+                        <h3>Project 2</h3>
+                        <p>No project 2 yet.</p>
+                        <div class="project-images">
+                            <img src="https://via.placeholder.com/400" alt="Project Image 1">
+                            <img src="https://via.placeholder.com/400" alt="Project Image 2">
+                        </div>
+                        <button class="visit-project">Visit Project</button>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <section id="skills" class="section">
+            <h2>Skills</h2>
+            <p>I am proficient in Python, Java, and Javascript. Currently learning HTML, CSS, and React.</p>
+            <p>I also have experience in assembly language.</p>
+        </section>
+
+        <section id="contact" class="section">
+            <h2>Contact</h2>
+            <p>My email is worobeyluke@gmail.com.</p>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+<footer>
+    <p>This page is a work in progress.</p>
+</footer>
+</html>
