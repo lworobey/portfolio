@@ -26,19 +26,30 @@
         
         <section id="projects" class="section">
             <h2>Projects</h2>
-            <p>I don't have a lot of projects yet, but here are the ones I have.</p>
             
-            <!-- Project 1 Card -->
-            <article class="project-card">
-                <button id="openModal1" class="project-btn">Dino Game</button>
-        
+            <!-- Project Timeline -->
+            <div id="project-timeline" class="timeline">
+                <!-- Timeline Entry 1 -->
+                <div class="timeline-entry">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h4>Dino Game</h4>
+                        <p class="timeline-duration">Jan 2023 - Mar 2023</p>
+                        <p class="timeline-description">A downgraded version of the chrome dinosaur game built using HTML, CSS, and JavaScript.</p>
+                        <div class="timeline-actions">
+                            <button onclick="openModal('modal1')">View Details</button>
+                            <a href="https://lworobey.github.io/dino-game" target="_blank" class="button">Visit Project</a>
+                        </div>
+                    </div>
+                </div>
+
                 <!-- Modal for Project 1 -->
                 <div class="modal" id="modal1">
                     <div class="modal-content">
                         <span class="close-button" onclick="closeModal('modal1')">&times;</span>
                         <h3>Dino Game</h3>
                         <p>This is a downgraded version of the chrome dinosaur game that I made using HTML, CSS, and Javascript.</p>
-        
+
                         <div class="carousel-container">
                             <div class="carousel-slide">
                                 <img src="dino_game_imgs/DinoGame1.jpg" alt="Start up screen">
@@ -52,11 +63,11 @@
                             <div class="carousel-slide">
                                 <img src="dino_game_imgs/jumping.jpg" alt="Jumping over a cactus">
                             </div>
-        
+
                             <!-- Carousel Navigation -->
                             <button class="prev" onclick="plusSlides(-1)">&#10094;</button>
                             <button class="next" onclick="plusSlides(1)">&#10095;</button>
-        
+
                             <!-- Dots for carousel -->
                             <div class="dot-container">
                                 <span class="dot" onclick="currentSlide(1)" aria-label="Slide 1"></span>
@@ -65,16 +76,25 @@
                                 <span class="dot" onclick="currentSlide(4)" aria-label="Slide 4"></span>
                             </div>
                         </div>
-        
+
                         <button class="visit-project" onclick="window.open('https://lworobey.github.io/dino-game', '_blank')">Visit Project</button>
                     </div>
                 </div>
-            </article>
-        
-            <!-- Project 2 Card -->
-            <article class="project-card">
-                <button id="openModal2" class="project-btn">Empty Project 2</button>
-        
+
+                <!-- Timeline Entry 2 (Placeholder) -->
+                <div class="timeline-entry">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h4>Project 2</h4>
+                        <p class="timeline-duration">Apr 2023 - Jun 2023</p>
+                        <p class="timeline-description">A placeholder project for demonstration.</p>
+                        <div class="timeline-actions">
+                            <button onclick="openModal('modal2')">View Details</button>
+                            <a href="#" target="_blank" class="button">Visit Project</a>
+                        </div>
+                    </div>
+                </div>
+
                 <!-- Modal for Project 2 -->
                 <div class="modal" id="modal2">
                     <div class="modal-content">
@@ -88,18 +108,72 @@
                         <button class="visit-project">Visit Project</button>
                     </div>
                 </div>
-            </article>
+            </div>
         </section>
-
+        
         <section id="skills" class="section">
             <h2>Skills</h2>
-            <p>I am proficient in Python, Java, and Javascript. Currently learning HTML, CSS, and React.</p>
-            <p>I also have experience in assembly language.</p>
+            <div class="tabs">
+                <button class="tablinks active" onclick="openTab(event, 'programming')">Programming</button>
+                <button class="tablinks" onclick="openTab(event, 'frameworks')">Frameworks</button>
+                <button class="tablinks" onclick="openTab(event, 'tools')">Tools</button>
+            </div>
+            <div id="programming" class="tabcontent" style="display: block;">
+                <h3>Programming Languages</h3>
+                <div class="progress-container">
+                    <div class="progress-bar" style="width: 70%;">Python-70%</div>
+                </div>
+                <div class="progress-container">
+                    <div class="progress-bar" style="width: 60%;">Java-60%</div>
+                </div>
+                <div class="progress-container">
+                    <div class="progress-bar" style="width: 50%;">Javascript-50%</div>
+                </div>
+                <div class="progress-container">
+                    <div class="progress-bar" style="width: 40%;">HTML-30%</div>
+                </div>
+                <div class="progress-container">
+                    <div class="progress-bar" style="width: 30%;">CSS-30%</div>
+                </div>
+                <div class="progress-container">
+                    <div class="progress-bar" style="width: 20%;">Assembly-20%</div>
+                </div>
+            </div>
+            <div id="frameworks" class="tabcontent">
+                <h3>Frameworks</h3>
+                <div class="progress-container">
+                    <div class="progress-bar" style="width: 20%;">React-20%</div>
+                </div>
+            </div>
+            <div id="tools" class="tabcontent">
+                <h3>Tools</h3>
+                <div class="progress-container">
+                    <div class="progress-bar" style="width: 40%;">Git-40%</div>
+                </div>
+            </div>
         </section>
 
         <section id="contact" class="section">
             <h2>Contact</h2>
-            <p>My email is worobeyluke@gmail.com.</p>
+            <form id="contact-form" onsubmit="return validateForm()">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <small id="name-error" class="error-message"></small>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <small id="email-error" class="error-message"></small>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+                    <small id="message-error" class="error-message"></small>
+                </div>
+                <button type="submit">Submit</button>
+                <p id="success-message" class="success-message"></p>
+            </form>
         </section>
     </main>
     <script src="script.js"></script>

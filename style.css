@@ -7,8 +7,8 @@ nav {
     list-style-type: none;
     padding: 0;
     margin: 0;
-    text-align: left; /* Changed from center to left */
-    padding-left: 20px; /* Added left padding */
+    text-align: left;
+    padding-left: 20px;
 }
 
 .nav-item {
@@ -144,12 +144,233 @@ nav {
 .content:has(#home):not(:has(section:target)) > #home {
     display: block;
 }
+
 body{
     background-color: #1a1a1a;
     color: #f5f5f5;
 }
+
 footer{
     margin-top: 50px;
     text-align: center;
     padding: 20px;
+}
+
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+.tab button:hover {
+  background-color: #ddd;
+}
+
+.tab button.active {
+  background-color: #ccc;
+}
+
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+
+.progress-container {
+  width: 100%;
+  background-color: #ddd;
+  border-radius: 5px;
+  margin: 10px 0;
+}
+
+.progress-bar {
+  width: 0%;
+  height: 30px;
+  background-color: #4CAF50;
+  border-radius: 5px;
+  text-align: center;
+  line-height: 30px;
+  color: white;
+  transition: width 0.5s ease-in-out;
+}
+
+.tabs {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #2a2a2a;
+  }
+  
+.tablinks {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 16px;
+}
+  
+.tablinks:hover {
+    background-color: #ddd;
+}
+  
+.tablinks.active {
+    background-color: #ccc;
+}
+  
+.tabcontent {
+    display: none;
+    padding: 16px;
+    border: 1px
+}
+
+.modal-content {
+    position: relative;
+    z-index: 2;
+}
+
+.close-button {
+    z-index: 3;
+}
+
+#contact-form {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.error-message {
+    color: red;
+    font-size: 12px;
+    display: none;
+}
+
+.success-message {
+    color: green;
+    font-weight: bold;
+    display: none;
+}
+
+.form-group{
+    color: black;
+}
+
+.timeline {
+    position: relative;
+    padding-left: 30px;
+    margin-left: 10px;
+    border-left: 2px solid #4CAF50;
+}
+
+.timeline-entry {
+    display: flex;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.timeline-marker {
+    position: absolute;
+    left: -14px;
+    top: 0;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #4CAF50;
+    border: 2px solid white;
+}
+
+.timeline-content {
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 6px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+.timeline-duration {
+    font-weight: bold;
+    color: white;
+}
+
+.timeline-description {
+    color: white;
+}
+
+.timeline-actions {
+    margin-top: 10px;
+}
+
+.timeline-actions button,
+.timeline-actions .button {
+    padding: 8px 15px;
+    font-size: 14px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.timeline-actions button:hover,
+.timeline-actions .button:hover {
+    background-color: #45a049;
+}
+
+.timeline-actions button {
+    cursor: pointer;
 }
