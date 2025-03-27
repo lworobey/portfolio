@@ -8,13 +8,6 @@ export default function Home() {
         </h1>
       </section>
 
-      {/* Projects Section */}
-      <section id="projects" className="section-center">
-        <h2 className="text-3xl font-bold">
-          Projects
-        </h2>
-      </section>
-
       {/* About Section */}
       <section id="about" className="section-center">
         <h2 className="text-3xl font-bold">
@@ -22,8 +15,15 @@ export default function Home() {
         </h2>
       </section>
 
+      {/* Projects Section */}
+      <section id="projects" className="section-center">
+        <h2 className="text-3xl font-bold">
+          Projects
+        </h2>
+      </section>
+
       {/* Contact Section */}
-      <section id="contact" className="section-center ">
+      <section id="contact" className="section-center">
         <h2 className="text-3xl font-bold">
           Contact
         </h2>
