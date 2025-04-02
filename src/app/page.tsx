@@ -6,7 +6,7 @@ export default function Home() {
       {/* Home Section */}
       <section id="home" className="section-center justify-center">
         <h1 className="text-4xl font-bold">
-          Hi! I'm Luke Worobey and Welcome to my Portfolio!
+          Hi! I&apos;m Luke Worobey and Welcome to my Portfolio!
         </h1>
       </section>
 
@@ -18,7 +18,7 @@ export default function Home() {
         <p className="text-center mt-10 max-w-2xl mx-auto">
           I am a Software Engineer with a passion in backend engineering.
           I enjoy learning to code and exporing new ventures related to coding to improve my overall experience.
-          While I'm not coding I enjoy playing video games and watching TV, so I'm never away from technology.
+          While I&apos;m not coding I enjoy playing video games and watching TV, so I&apos;m never away from technology.
         </p>
       </section>
 
@@ -32,7 +32,12 @@ export default function Home() {
           <div className="relative p-[1px] rounded-lg bg-gradient-to-b from-blue-500 to-green-500">
             <div className="bg-gray-900 rounded-lg p-4 h-full">
               <div className="flex flex-col items-center">
-                <img src="/icons/Python.png" className="w-16 h-16 mb-2" />
+                <Image src="/icons/Python.png"
+                  alt="Python"
+                  width={64}
+                  height={64}
+                  className="mb-2"
+                />
                 <span className="text-white">PYTHON</span>
               </div>
             </div>
