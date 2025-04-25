@@ -16,9 +16,9 @@ export default function Home() {
           About Me
         </h2>
         <p className="text-center mt-10 max-w-2xl mx-auto">
-        "I am a Software Engineer with a strong focus on backend engineering.
-         I am passionate about building reliable, scalable systems and continuously expanding my knowledge of different technologies and architectures.
-         Outside of work, I stay connected to the world of technology through my interest in video games and digital media."
+        I am a Software Engineer with a strong focus on backend engineering.
+        I am passionate about building reliable, scalable systems and continuously expanding my knowledge of different technologies and architectures.
+        Outside of work, I stay connected to the world of technology through my interest in video games and digital media.
         </p>
       </section>
 
