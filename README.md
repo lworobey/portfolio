@@ -45,4 +45,4 @@ open in the browser
 
 ## Additional resorces used
 - Cursor AI, for quick setup to make common knowledge parts coded faster (such as deleting initial NextJS project code, and HTML set up on page.tsx that would take longer to code, but I already know how to do)
-- [React](react.dev), used docs instead AI to learn and refresh myself on how to use different code myself
+- [React](react.dev), used the official docs (not AI) to learn and reinforce core concepts on my own.
