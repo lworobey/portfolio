@@ -57,6 +57,7 @@ export default function Home() {
         <h2 className="text-3xl font-bold">
           Contact
         </h2>
+        {/*Will be worked on using https://react.dev/reference/react-dom/components/form*/}
       </section>
     </div>
   );
