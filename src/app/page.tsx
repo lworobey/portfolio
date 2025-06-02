@@ -27,18 +27,143 @@ export default function Home() {
         <h2 className="text-3xl font-bold">
           Skills
         </h2>
-        <div className="mt-10 max-w-4xl mx-auto grid grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-8 justify-center items-center">
+        <div className="skills-grid">
           {/* Python */}
-          <div className="relative p-[1px] rounded-lg bg-gradient-to-b from-blue-500 to-green-500">
-            <div className="bg-gray-900 rounded-lg p-4 h-full">
-              <div className="flex flex-col items-center">
-                <Image src="/icons/Python.png"
-                  alt="Python"
-                  width={64}
-                  height={64}
-                  className="mb-2"
-                />
-                <span className="text-white">PYTHON</span>
+          <div className="skill-card">
+            <div className="skill-card-inner">
+              <div className="skill-content">
+                <img src="/icons/Python.png" className="skill-icon" />
+                <span className="skill-name">PYTHON</span>
+              </div>
+            </div>
+          </div>
+
+          {/* Java */}
+          <div className="skill-card">
+            <div className="skill-card-inner">
+              <div className="skill-content">
+                <img src="/icons/java.jpg" className="skill-icon" />
+                <span className="skill-name">JAVA</span>
+              </div>
+            </div>
+          </div>
+
+          {/* React */}
+          <div className="skill-card">
+            <div className="skill-card-inner">
+              <div className="skill-content">
+                <img src="/icons/react.png" className="skill-icon" />
+                <span className="skill-name">REACT</span>
+              </div>
+            </div>
+          </div>
+
+          {/* Next.js */}
+          <div className="skill-card">
+            <div className="skill-card-inner">
+              <div className="skill-content">
+                <img src="/icons/nextjs.png" className="skill-icon" />
+                <span className="skill-name">NEXT.JS</span>
+              </div>
+            </div>
+          </div>
+
+          {/* HTML */}
+          <div className="skill-card">
+            <div className="skill-card-inner">
+              <div className="skill-content">
+                <img src="/icons/html.png" className="skill-icon" />
+                <span className="skill-name">HTML</span>
+              </div>
+            </div>
+          </div>
+
+          {/* CSS */}
+          <div className="skill-card">
+            <div className="skill-card-inner">
+              <div className="skill-content">
+                <img src="/icons/css.jpg" className="skill-icon" />
+                <span className="skill-name">CSS</span>
+              </div>
+            </div>
+          </div>
+
+          {/* Node.js & Express */}
+          <div className="skill-card">
+            <div className="skill-card-inner">
+              <div className="skill-content">
+                <img src="/icons/nodeAndExpress.jpg" className="skill-icon" />
+                <span className="skill-name">NODE.JS</span>
+              </div>
+            </div>
+          </div>
+
+          {/* MongoDB */}
+          <div className="skill-card">
+            <div className="skill-card-inner">
+              <div className="skill-content">
+                <img src="/icons/mongodb.png" className="skill-icon" />
+                <span className="skill-name">MONGODB</span>
+              </div>
+            </div>
+          </div>
+
+          {/* Git */}
+          <div className="skill-card">
+            <div className="skill-card-inner">
+              <div className="skill-content">
+                <img src="/icons/git.png" className="skill-icon" />
+                <span className="skill-name">GIT</span>
+              </div>
+            </div>
+          </div>
+
+          {/* Docker */}
+          <div className="skill-card">
+            <div className="skill-card-inner">
+              <div className="skill-content">
+                <img src="/icons/docker.png" className="skill-icon" />
+                <span className="skill-name">DOCKER</span>
+              </div>
+            </div>
+          </div>
+
+          {/* AWS */}
+          <div className="skill-card">
+            <div className="skill-card-inner">
+              <div className="skill-content">
+                <img src="/icons/aws.png" className="skill-icon" />
+                <span className="skill-name">AWS</span>
+              </div>
+            </div>
+          </div>
+
+          {/* Jest */}
+          <div className="skill-card">
+            <div className="skill-card-inner">
+              <div className="skill-content">
+                <img src="/icons/jest.jpg" className="skill-icon" />
+                <span className="skill-name">JEST</span>
+              </div>
+            </div>
+          </div>
+
+          {/* Postman */}
+          <div className="skill-card">
+            <div className="skill-card-inner">
+              <div className="skill-content">
+                <img src="/icons/postman.png" className="skill-icon" />
+                <span className="skill-name">POSTMAN</span>
+              </div>
+            </div>
+          </div>
+
+          {/* Assembly */}
+          <div className="skill-card">
+            <div className="skill-card-inner">
+              <div className="skill-content">
+                <img src="/icons/asm.png" className="skill-icon" />
+                <span className="skill-name">ASSEMBLY</span>
               </div>
             </div>
           </div>
