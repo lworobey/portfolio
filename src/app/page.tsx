@@ -32,7 +32,7 @@ export default function Home() {
           <div className="skill-card">
             <div className="skill-card-inner">
               <div className="skill-content">
-                <img src="/icons/Python.png" className="skill-icon" />
+                <Image src="/icons/Python.png" alt="Python logo" width={64} height={64} className="skill-icon" style={{ objectFit: 'contain' }} />
                 <span className="skill-name">PYTHON</span>
               </div>
             </div>
@@ -42,7 +42,7 @@ export default function Home() {
           <div className="skill-card">
             <div className="skill-card-inner">
               <div className="skill-content">
-                <img src="/icons/java.jpg" className="skill-icon" />
+                <Image src="/icons/java.jpg" alt="Java logo" width={64} height={64} className="skill-icon" style={{ objectFit: 'contain' }} />
                 <span className="skill-name">JAVA</span>
               </div>
             </div>
@@ -52,7 +52,7 @@ export default function Home() {
           <div className="skill-card">
             <div className="skill-card-inner">
               <div className="skill-content">
-                <img src="/icons/react.png" className="skill-icon" />
+                <Image src="/icons/react.png" alt="React logo" width={64} height={64} className="skill-icon" style={{ objectFit: 'contain' }} />
                 <span className="skill-name">REACT</span>
               </div>
             </div>
@@ -62,7 +62,7 @@ export default function Home() {
           <div className="skill-card">
             <div className="skill-card-inner">
               <div className="skill-content">
-                <img src="/icons/nextjs.png" className="skill-icon" />
+                <Image src="/icons/nextjs.png" alt="Next.js logo" width={64} height={64} className="skill-icon" style={{ objectFit: 'contain' }} />
                 <span className="skill-name">NEXT.JS</span>
               </div>
             </div>
@@ -72,7 +72,7 @@ export default function Home() {
           <div className="skill-card">
             <div className="skill-card-inner">
               <div className="skill-content">
-                <img src="/icons/html.png" className="skill-icon" />
+                <Image src="/icons/html.png" alt="HTML logo" width={64} height={64} className="skill-icon" style={{ objectFit: 'contain' }} />
                 <span className="skill-name">HTML</span>
               </div>
             </div>
@@ -82,7 +82,7 @@ export default function Home() {
           <div className="skill-card">
             <div className="skill-card-inner">
               <div className="skill-content">
-                <img src="/icons/css.jpg" className="skill-icon" />
+                <Image src="/icons/css.jpg" alt="CSS logo" width={64} height={64} className="skill-icon" style={{ objectFit: 'contain' }} />
                 <span className="skill-name">CSS</span>
               </div>
             </div>
@@ -92,7 +92,7 @@ export default function Home() {
           <div className="skill-card">
             <div className="skill-card-inner">
               <div className="skill-content">
-                <img src="/icons/nodeAndExpress.jpg" className="skill-icon" />
+                <Image src="/icons/nodeAndExpress.jpg" alt="Node.js and Express logo" width={64} height={64} className="skill-icon" style={{ objectFit: 'contain' }} />
                 <span className="skill-name">NODE.JS</span>
               </div>
             </div>
@@ -102,7 +102,7 @@ export default function Home() {
           <div className="skill-card">
             <div className="skill-card-inner">
               <div className="skill-content">
-                <img src="/icons/mongodb.png" className="skill-icon" />
+                <Image src="/icons/mongodb.png" alt="MongoDB logo" width={64} height={64} className="skill-icon" style={{ objectFit: 'contain' }} />
                 <span className="skill-name">MONGODB</span>
               </div>
             </div>
@@ -112,7 +112,7 @@ export default function Home() {
           <div className="skill-card">
             <div className="skill-card-inner">
               <div className="skill-content">
-                <img src="/icons/git.png" className="skill-icon" />
+                <Image src="/icons/git.png" alt="Git logo" width={64} height={64} className="skill-icon" style={{ objectFit: 'contain' }} />
                 <span className="skill-name">GIT</span>
               </div>
             </div>
@@ -122,7 +122,7 @@ export default function Home() {
           <div className="skill-card">
             <div className="skill-card-inner">
               <div className="skill-content">
-                <img src="/icons/docker.png" className="skill-icon" />
+                <Image src="/icons/docker.png" alt="Docker logo" width={64} height={64} className="skill-icon" style={{ objectFit: 'contain' }} />
                 <span className="skill-name">DOCKER</span>
               </div>
             </div>
@@ -132,7 +132,7 @@ export default function Home() {
           <div className="skill-card">
             <div className="skill-card-inner">
               <div className="skill-content">
-                <img src="/icons/aws.png" className="skill-icon" />
+                <Image src="/icons/aws.png" alt="AWS logo" width={64} height={64} className="skill-icon" style={{ objectFit: 'contain' }} />
                 <span className="skill-name">AWS</span>
               </div>
             </div>
@@ -142,7 +142,7 @@ export default function Home() {
           <div className="skill-card">
             <div className="skill-card-inner">
               <div className="skill-content">
-                <img src="/icons/jest.jpg" className="skill-icon" />
+                <Image src="/icons/jest.jpg" alt="Jest logo" width={64} height={64} className="skill-icon" style={{ objectFit: 'contain' }} />
                 <span className="skill-name">JEST</span>
               </div>
             </div>
@@ -152,7 +152,7 @@ export default function Home() {
           <div className="skill-card">
             <div className="skill-card-inner">
               <div className="skill-content">
-                <img src="/icons/postman.png" className="skill-icon" />
+                <Image src="/icons/postman.png" alt="Postman logo" width={64} height={64} className="skill-icon" style={{ objectFit: 'contain' }} />
                 <span className="skill-name">POSTMAN</span>
               </div>
             </div>
@@ -162,7 +162,7 @@ export default function Home() {
           <div className="skill-card">
             <div className="skill-card-inner">
               <div className="skill-content">
-                <img src="/icons/asm.png" className="skill-icon" />
+                <Image src="/icons/asm.png" alt="Assembly logo" width={64} height={64} className="skill-icon" style={{ objectFit: 'contain' }} />
                 <span className="skill-name">ASSEMBLY</span>
               </div>
             </div>
