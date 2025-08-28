@@ -24,10 +24,20 @@ I chose to deploy it on vercel's cloud platform for easy Continuous Deployment
 - [Vercel](https://vercel.com) - For deployment
 
 ## To download and view locally
+Set up project all at once
+```bash
+git clone https://github.com/lworobey/portfolio.git && cd portfolio && npm i
+```
+
+OR one at a time
 
 Clone the repository 
 ```bash  
 git clone https://github.com/lworobey/portfolio.git  
+```
+Change Directory to the project
+```bash
+cd portfolio
 ```
 
 Install dependencies 
@@ -45,4 +55,4 @@ open in the browser
 
 ## Additional resorces used
 - Cursor AI, for quick setup to make common knowledge parts coded faster (such as deleting initial NextJS project code, and HTML set up on page.tsx that would take longer to code, but I already know how to do)
-- [React](react.dev), used the official docs (not AI) to learn and reinforce core concepts on my own.
+ [React](react.dev), used the official docs (not AI) to learn and reinforce core concepts on my own.
