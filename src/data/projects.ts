@@ -19,7 +19,7 @@ export type Project = {
       stack: ["MERN Stack", "Docker (dev)", "AWS (cloud deploy)"],
       links: {
         repo: "https://github.com/lworobey/video-game-db",
-        demo: "http://18.117.166.222", // put your AWS link here
+        demo: "http://18.117.166.222",
       },
       featured: true,
       highlights: [

@@ -1,4 +1,3 @@
-// src/app/projects/page.tsx
 import { projects } from "@/data/projects";
 
 export default function ProjectsPage() {
