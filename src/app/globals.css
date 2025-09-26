@@ -23,31 +23,27 @@ body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
 }
 
-/* Add this new class for navigation links */
 .nav-link {
   transition: color 0.2s ease;
   cursor: pointer;
 }
 
 .nav-link:hover {
-  color: #2563eb; /* This is the blue-600 color */
+  color: #2563eb;
 }
 
-/* Add this near the top of your file */
 html {
   scroll-behavior: smooth;
 }
 
-/* Update the section-center class */
 .section-center {
   min-height: 100vh;
-  padding-top: 5rem; /* This accounts for the fixed header */
+  padding-top: 5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-/* Skills Section Styles */
 .skills-grid {
   @apply mt-10 max-w-4xl mx-auto grid grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-8 justify-center items-center;
 }

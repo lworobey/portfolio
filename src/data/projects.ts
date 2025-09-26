@@ -1,4 +1,3 @@
-// src/data/projects.ts
 export type Project = {
     slug: string;
     title: string;
@@ -13,14 +12,15 @@ export type Project = {
   export const projects: Project[] = [
     {
       slug: "video-game-db",
-      title: "Video Game DB (Microservices)",
+      title: "Video Game Database",
       summary:
-        "Auth + game/collection services with JWT; Dockerized for dev and deployed on AWS.",
+        "A database of video games that allows users to sign in with discord, search for games, add them to their collection, and view their collection.",
       stack: ["MERN Stack", "Docker (dev)", "AWS (cloud deploy)"],
       links: {
         repo: "https://github.com/lworobey/video-game-db",
         demo: "http://18.117.166.222",
       },
+      image: "/projects/video-game-db/home.png",
       featured: true,
       highlights: [
         "Implemented OAuth2 login with Discord using Express",

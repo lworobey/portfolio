@@ -1,6 +1,11 @@
 import Image from 'next/image';
+import { projects } from '@/data/projects';
+import ProjectCard from '@/components/ProjectCard';
 
 export default function Home() {
+  // Filter for featured projects
+  const featuredProjects = projects.filter(project => project.featured);
+  
   return (
     <div className="flex flex-col">
       {/* Home Section */}
@@ -172,9 +177,15 @@ export default function Home() {
 
       {/* Projects Section */}
       <section id="projects" className="section-center">
-        <h2 className="text-3xl font-bold">
+        <h2 className="text-3xl font-bold mb-8">
           Projects
         </h2>
+        
+        <div>
+          {featuredProjects.map((project) => (
+            <ProjectCard key={project.slug} project={project} />
+          ))}
+        </div>
       </section>
 
       {/* Contact Section */}
