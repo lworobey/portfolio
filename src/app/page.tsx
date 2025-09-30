@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import { projects } from '@/data/projects';
 import ProjectCard from '@/components/ProjectCard';
+import ContactForm from '@/components/ContactForm';
 
 export default function Home() {
   // Filter for featured projects
@@ -191,9 +192,9 @@ export default function Home() {
       {/* Contact Section */}
       <section id="contact" className="section-center">
         <h2 className="text-3xl font-bold">
-          Contact
+          Contact Me
         </h2>
-        {/*Will be worked on using https://react.dev/reference/react-dom/components/form*/}
+          <ContactForm />
       </section>
     </div>
   );
