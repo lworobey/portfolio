@@ -37,7 +37,10 @@ export default function ContactForm() {
         body: JSON.stringify({ name, email, message, recaptchaToken: token }),
       });
 
-      if (!res.ok) throw new Error((await res.json()).error ?? "Request failed");
+      if (!res.ok) {
+        const errorData = await res.json();
+        throw new Error(errorData.error ?? "Request failed");
+      }
 
       setStatus("success");
       setName("");
