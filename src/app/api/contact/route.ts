@@ -36,7 +36,16 @@ export async function POST(request: NextRequest) {
     });
 
     const recaptchaResult = await recaptchaResponse.json();
+    
     if (!recaptchaResult.success) {
+      return NextResponse.json(
+        { success: false, error: 'reCAPTCHA verification failed' },
+        { status: 400 }
+      );
+    }
+
+    // Check reCAPTCHA score threshold (0.5 is a good balance)
+    if (recaptchaResult.score < 0.5) {
       return NextResponse.json(
         { success: false, error: 'reCAPTCHA verification failed' },
         { status: 400 }
@@ -69,7 +78,6 @@ Message: ${message}
         <p>${message.replace(/\n/g, '<br>')}</p>
       `,
     });
-    
     return NextResponse.json({ success: true });
   } catch (error) {
     console.error('Contact form error:', error);
